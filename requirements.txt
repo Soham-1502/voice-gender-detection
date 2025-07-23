@@ -1,4 +1,4 @@
-﻿aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.6.1
 aiohttp==3.12.14
 aiosignal==1.4.0
 async-timeout==5.0.1
@@ -9,6 +9,7 @@ certifi==2025.7.14
 cffi==1.17.1
 charset-normalizer==3.4.2
 colorama==0.4.6
+
 datasets==4.0.0
 decorator==5.2.1
 dill==0.3.8
@@ -48,15 +49,11 @@ scipy==1.15.3
 six==1.17.0
 soundfile==0.13.1
 soxr==0.5.0.post1
-standard-aifc==3.13.0
-standard-chunk==3.13.0
-standard-sunau==3.13.0
 sympy==1.14.0
 threadpoolctl==3.6.0
 tokenizers==0.21.2
-torch==2.7.1
-torchaudio==2.7.1
-torchcodec==0.0.0.dev0
+torch==2.2.2  # ✅ Use stable version to avoid dev/beta issues
+torchaudio==2.2.2  # ✅ Match Torch version
 tqdm==4.67.1
 transformers==4.53.2
 typing_extensions==4.14.1
@@ -64,5 +61,8 @@ tzdata==2025.2
 urllib3==2.5.0
 xxhash==3.5.0
 yarl==1.20.1
-openai-whisper
+streamlit  # ✅ REQUIRED for your app to work!
+
+# Whisper dependencies
+git+https://github.com/openai/whisper.git
 ffmpeg-python
